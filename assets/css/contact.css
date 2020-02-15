@@ -1,0 +1,730 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header*/*
+#contact header {
+    width: 80%;
+	position: relative;
+    padding: 0% 0% 10% 20%;
+    margin: 0;
+}
+#contact .head_box {
+    width: 100%;
+}
+/*ul*/
+#contact #nav-drawer #nav-content ul {
+    padding: 3% 2% 3% 0%;
+	color: #F00;
+    font-size: 2vw;
+	font-family: "Times New Roman", Times, serif;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#contact header #nav-drawer #nav-content ul li {
+	padding-right: 1em;
+}
+
+#contact header #nav-drawer #nav-content ul li a {
+	color: #F00;
+}
+#contact header #nav-drawer #nav-content ul li a:hover {
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+
+
+#contact header h1 {
+	font-size: 5.7vw;
+	position: absolute;
+	font-weight: bold;
+	top: 40%;
+	left: 7%;
+    -webkit-transform: translateY(-40%);    
+    -moz-transform: translateY(-40%);    
+    transform: translateY(-40%);    
+	font-family: "Times New Roman", Times, serif;
+    -webkit-writing-mode: tb-rl;/*縦指定*/
+	-moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+}
+#contact header h1 a {
+    color: #000;
+}
+
+#contact header h2 {
+	position: absolute;
+	bottom: 12%;
+    left: 55%;
+	font-size: 12vw;
+	font-weight: bold;
+	color: #000;
+	-webkit-transform: translateX(-55%);
+    -moz-transform: translateX(-55%);
+    transform: translateX(-55%);
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+/*center*/
+#contact #center {
+    max-width: 960px;
+    margin: 0% auto 10% auto;
+}
+
+#contact .caution {
+    width: 70%;
+	font-size: 20px;
+	color: #F00;
+	text-align: center;
+	margin: 0 auto 4% auto;
+}
+
+
+
+/*ここから問い合わせform*/
+#form {
+	color: #F00;
+	font-size: 20px;
+}
+
+#form #main_table {
+	width: 70%;
+	margin: 0px auto;
+}
+#form table th {
+	width: 50%;
+	padding : 1em;
+	vertical-align: top;
+    font-weight: normal;
+}
+#form table td {
+	width : 70%;
+	padding : 6px 8px ;
+	text-align : left ;
+}
+
+
+#button {
+	margin: 3% 0 0 0;
+}
+input.form {
+	width: 300px;
+}
+.text {
+	width: 350px;
+}
+.button {
+	background: #F00;
+	border-radius: 10px;
+	display: block;
+	margin: 0px auto;
+	width: 150px;
+	padding: 15px 0px;
+	font-size: 20px;
+	color: #FFF;
+}
+
+
+
+/*ここからレスポンシブ設定*/
+@media screen and (max-width: 1280px){
+/*headerエリア*/
+
+    #contact #nav-drawer #nav-content ul {
+        font-size: 25px;
+        padding: 3.5% 2% 3.5% 0%;
+    }
+    #contact header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 6.5%;
+        -webkit-transform: translateY(-50%);    
+        -moz-transform: translateY(-50%);    
+        transform: translateY(-50%);
+        font-size: 75px;
+    }
+    #contact header h2 {
+        font-size: 13.5vw;
+    	position: absolute;
+        bottom: 5%;
+        left: 60%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translate(-60%,-6%);
+        -moz-transform: translate(-60%,-6%);
+        transform: translate(-60%,-6%);  
+    }
+    #contact header {
+        width: 80%;
+        position: relative;
+        padding: 0% 0% 8% 20%;
+        margin: 0;
+    }
+    #contact header .head_box {
+        width: 100%;
+        height: 49vh;/*1280px本来の高さ*/
+        position: relative;
+        overflow: hidden;
+    }
+    #contact header .head_box img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 60%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-60%, -50%);
+        width: auto; /* サイズ指定をリセット！*/
+        max-width: initial; /* サイズ指定をリセット！*/
+        height: 100%;    
+    }
+    
+    #contact .caution {
+        margin: 2% auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    #contact header #nav-drawer #nav-content ul {
+        font-size: 19px;
+        padding: 4% 2% 4% 0%;
+
+    }
+    #contact header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 57.5%;/*あえてtransform外している*/
+        left: 3%;        
+        font-size: 68px;
+    }
+    #contact header h2 {
+        font-size: 124px;
+    	position: absolute;
+        bottom: -7.5%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    #contact header {
+        width: 100%;
+        position: relative;
+        padding: 0%;
+    }
+        #contact .caution {
+            margin: 12% auto 2% auto;
+            font-size: 16px;
+        }
+        #form {
+            font-size: 16px;
+        }
+        #form #main_table {
+            width: 80%;
+            margin: 0% auto;
+    }
+    #form table th {
+        width: 60%;
+        padding : 1em;
+        vertical-align: top;
+        font-weight: normal;
+    }
+    #form table td {
+        width : 100%;
+        padding : 6px 8px ;
+        text-align : left ;
+    }
+
+
+    #button {
+        margin: 3% 0 0 0;
+    }
+    input.form {
+        width: 250px;
+    }
+    .text {
+        width: 250px;
+    }
+    .button {
+        background: #F00;
+        border-radius: 10px;
+        display: block;
+        margin: 0px auto;
+        width: 150px;
+        padding: 15px 0px;
+        font-size: 16px;
+        color: #FFF;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    #contact header #nav-drawer #nav-content ul {
+        position: absolute;
+        padding: 0%;
+        z-index: 999;
+    }
+    #contact header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);  
+        font-size: 62px;
+    }
+
+    
+    #contact header h2 {
+        font-size: 110px;
+    	position: absolute;
+        bottom: -7%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    #contact header {
+        width: 100%;
+        position: relative;
+        display: block;
+        padding: 0%;
+        margin: 0;
+    }
+    
+    #contact .caution {
+        margin: 13% auto 2% auto;
+        font-size: 16px;
+    }
+    #form {
+        font-size: 16px;
+    }
+    #form #main_table {
+        width: 90%;
+        margin: 0% auto;
+    }
+    #form table th {
+        width: 100%;
+        padding : 1em;
+        vertical-align: top;
+        font-weight: normal;
+    }
+    #form table td {
+        width : 100%;
+        padding : 6px 8px ;
+        text-align : left ;
+    }
+
+
+    #button {
+        margin: 3% 0 0 0;
+    }
+    input.form {
+        width: 230px;
+    }
+    .text {
+        width: 230px;
+    }
+    .button {
+        background: #F00;
+        border-radius: 10px;
+        display: block;
+        margin: 0px auto;
+        width: 150px;
+        padding: 15px 0px;
+        font-size: 16px;
+        color: #FFF;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 480px){
+    #contact header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);  
+        font-size: 58px;
+    }
+
+    #contact header h2 {
+        font-size: 92px;
+    	position: absolute;
+        bottom: -6%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    
+    #contact .caution {
+        margin: 15% auto 2% auto;
+        font-size: 12px;
+    }
+    #form {
+        font-size: 12px;
+    }
+    #form #main_table {
+        width: 95%;
+        margin: 0% auto;
+    }
+    #form table th {
+        width: 70%;
+        padding : 1em;
+        vertical-align: top;
+        font-weight: normal;
+    }
+    #form table td {
+        width : 100%;
+        padding : 6px 8px ;
+        text-align : left ;
+        margin: 0 auto 0 0;
+    }
+
+
+    #button {
+        margin: 3% 0 0 0;
+    }
+    input.form {
+        width: 180px;
+    }
+    .text {
+        width: 180px;
+    }
+    .button {
+        background: #F00;
+        border-radius: 10px;
+        display: block;
+        margin: 0px auto;
+        width: 100px;
+        padding: 15px 0px;
+        font-size: 12px;
+        color: #FFF;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*common読み込み削除→代わりに直接記述*/
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+/*画像縮める設定*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*横スクロール出さない*/
+html {
+	overflow-y : scroll;
+	height: auto;
+}
+
+
+a {
+	text-decoration:none;
+}
+a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+/*inner設定*/
+#inner {
+	width: 100%;
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+
+/*headerフルスクリーン指定*/
+/*テキストを画像の上に配置*/
+
+header {
+	position: relative;
+	display: block;
+}
+
+
+header h1 a {
+	color: #FFF;
+}
+header h1 a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+header #nav-drawer #nav-content ul {
+	font-family: "Times New Roman", Times, serif;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header #nav-drawer #nav-content ul li {
+	padding-right: 1em;
+	color: #F00;
+}
+header #nav-drawer #nav-content ul li a {
+	color: #F00;
+}
+header #nav-drawer #nav-content ul li a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+
+
+
+
+/*ここからfooter*/
+footer {
+	background: #000;
+    width: 100%;
+    height: auto;
+}
+.foot {
+    width: 90%;
+    margin: 0 5%;
+    padding: 3em 0;
+}
+.foot ul {
+	display: flex;
+    justify-content: center;
+	font-size: 110%;
+    font-family: "Times New Roman", Times, serif;
+}
+ul li:not(:last-child) {
+    padding-right: 1em;
+}
+footer a {
+	color: #f00;
+}
+.foot p {
+    color: #f00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 90%;
+    padding-top: 3.5em;
+}
+
+hr {
+    display:block;
+    width: 90%;
+    height: 1px;
+    background-color: #f00;
+    border: none;
+}
+.footbox {
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 6em;
+    padding-bottom: 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.footbox p {
+    font-size: 90%;
+    color: #f00;
+}
+p.p_second {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*601px以上でハンバーガーメニュー消す*/
+header #nav-drawer #nav-open {
+	display:none;
+}
+header #nav-drawer .nav-unshown {
+	display:none;
+}
+
+
+
+/*レスポンシブ設定max-width: 600px*/
+@media screen and (max-width: 600px) { 
+    .foot ul {
+        display: flex;
+        flex-wrap:wrap;
+        line-height: 1.5;
+    }
+
+    .foot p {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+        padding-top: 2.5em;
+    }
+
+    .footbox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 3.5em;
+    }
+    p.p_second {
+        padding-top: 2em;
+    }
+
+
+    /*ここからハンバーガーメニュー*/
+    #contact header #nav-drawer #nav-open {
+            display:block;
+        }
+    /*アイコンが拡大されない為のサイズ指定*/
+    #contact header #nav-drawer img {
+        width: 30px;
+        height: 10px;
+    }
+    #contact header #nav-drawer {
+        position: absolute;
+        top: 27px;
+        right: 33px;
+        color: #FFF;
+        z-index: 999;
+    }
+    /*チェックボックス等は非表示に*/
+    #contact header #nav-drawer .nav-unshown {
+        display:none;
+    }
+
+    /*アイコンのスペース*/
+    #contact header #nav-drawer #nav-open {
+        display: inline-block;
+    }
+
+    /*ハンバーガーアイコンをCSSだけで表現*/
+    #contact header #nav-drawer #nav-content ul li a {
+        color: #fff;
+    }
+    #contact header #nav-drawer #nav-open span, #nav-open span:before, #nav-open span:after {
+        position: absolute;
+        /*height: 3px;*//*線の太さ*/
+        /*width: 25px;*//*長さ*/
+        background: #F00;
+        display: block;
+        content: '';
+        cursor: pointer;
+    }
+    #contact header #nav-drawer #nav-open span:before {
+        bottom: -8px;
+    }
+    #contact header #nav-drawer #nav-open span:after {
+        bottom: -16px;
+    }
+
+    /*閉じる用の薄黒カバー*/
+    #contact header #nav-drawer #nav-close {
+        display: none;/*はじめは隠しておく*/
+        position: fixed;
+        z-index: 999;
+        top: 0;/*全体に広がるように*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+    /*中身*/
+    #contact header #nav-drawer #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 999;/*最前面に*/
+        width: 200px;/*右側に隙間を作る（閉じるカバーを表示）*/
+        height: 455px;
+        color: #fff;
+        text-align: justify-all;
+        background: #F00;/*背景色*/
+        transition: .3s ease-in-out;/*滑らかに表示*/
+        -webkit-transform: translateX(-105%);
+        -moz-transform: translateX(-105%);
+        transform: translateX(-105%);/*左に隠しておく*/
+    }
+    /*チェックが入ったらもろもろ表示*/
+    #contact header #nav-drawer #nav-input:checked ~ #nav-close {
+        display: block;/*カバーを表示*/
+        opacity: .5;
+    }
+
+    #contact header #nav-drawer #nav-input:checked ~ #nav-content {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);/*中身を表示（右へスライド）*/
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+
+
+    #contact header #nav-drawer #nav-content ul {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        -webkit-transform: translateY(-16%);
+        -moz-transform: translateY(-16%);
+        transform: translateY(-16%);
+        -webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+    #contact header #nav-drawer #nav-content ul li {
+        font-size: 19px;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+
+}

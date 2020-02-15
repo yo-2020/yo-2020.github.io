@@ -1,0 +1,756 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pro header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#pro header h1 {
+	font-size: 6vw;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 2.5%;
+    transform: translateY(-50%);
+	font-family: "Times New Roman", Times, serif;
+	-webkit-writing-mode: tb-rl;/*縦指定*/
+	-moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+}
+#pro header h1 a {
+    color: #fff;
+}
+
+#pro header #nav-drawer #nav-content ul {
+	font-size: 2vw;
+}
+
+#pro header h2 {
+	position: absolute;
+	bottom: -5%;
+    left: 55%;
+	font-size: 12vw;
+	font-weight: bold;
+	color: #fff;
+	-webkit-transform: translateX(-55%);
+    -moz-transform: translateX(-55%);
+    transform: translateX(-55%);
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*contents*/
+#contents {
+    width: 100%;
+    height: auto;
+}
+.contents_box {
+    width: 40%;
+    margin: 10% 30%;
+}
+.contents_box h3 {
+    color: #F00;
+	font-size: 16px;
+    line-height: 1.3;
+	padding-bottom: 2.7vw;
+    text-align: center;
+}
+.contents_box h3:before{
+    content: "Granchocolate";
+    color: #F00;
+    font-size: 38px;
+    display: block;/*改行指定*/
+}
+.contents_box p {
+    color: #F00;
+	font-size: 18px;
+    text-align: left;
+	line-height: 4;
+}
+
+/*mainArea*/
+#pro #mainArea {
+    width: 90%;
+    margin: 0 auto;
+}
+.centerWrap,.bnrWrap {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15%;
+	background: #000;
+	color: #FFF;
+	position: relative;
+}
+
+
+/*pタグ縦書き指定*/
+.centerWrap .p_out,.bnrWrap .p_a {
+    color: #f00;
+	position: absolute;
+	top: 50%;
+	transform : translateY(-20%);
+	left: 6.5%;
+	font-size: 34px;
+	font-family: "Times New Roman", Times, serif;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+	-webkit-writing-mode: tb-rl;
+    -moz-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+	font-weight: bold;
+}
+.img_text_box {
+    position: relative;
+}
+/*READ文字*/
+p.read {
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/*hoverエフェクト部分*/
+.hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+.hover_active {
+    display: block;
+}
+.h3p_wrap {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+h3.more {
+    font-size: 22px;
+    padding-bottom: 14px;
+}
+.h3p_wrap p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+/*#mainSection*/
+#pro #mainSection {
+    width: 90%;
+    margin: 10% auto;
+}
+
+
+/*bottomArea*/
+#pro #bottomArea {
+    width: 100%;
+    margin-top: 20%;
+}
+#pro .blockBottom {
+	position: relative;
+	width: 90%;
+	height: auto;
+    margin: 0 5%;
+}
+.blockBottom .img_box {
+    position: absolute;
+    top: -15%;
+    right: 0%;
+    width: 80%;
+    z-index: 10;
+}
+.blockBottom .red_box {
+    width: 80%;
+    height: 40vw;
+    background: #f00;
+}
+#pro #bottomArea h3 {
+    position: absolute;
+    top: 50%;/*28%*/
+    left: 10%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);/*28%*/
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    font-size: 10vw;
+    z-index: 100;
+}
+.wrap_Bottom {
+    width: 70%;
+    height: auto;
+    margin: 10% 15%;
+    display: flex;
+    
+}
+.wrap_a {
+    width: 50%;
+    position: relative;
+}
+.wrap_a .a_box {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translate(-30%,-50%);
+    -moz-transform: translate(-30%,-50%);
+    transform: translate(-30%,-50%);
+}
+.wrap_a h4 {
+    font-size: 38px;
+    color: #f00;
+    margin-bottom: 50px;
+}
+.wrap_a p {
+    color: #f00;
+    font-size: 18px;
+    line-height: 3.5;
+}
+.wrap_b {
+    width: 50%;
+}
+
+
+
+
+
+
+/*レスポンシブ設定*/
+@media screen and (max-width:1390px) {
+    /*bottomArea*/
+    .wrap_Bottom {
+        width: 80%;
+        height: auto;
+        margin: 10% 10%;
+    }
+    
+}
+
+/*1280px*/
+@media screen and (max-width: 1280px) { 
+
+    /*headerエリア*/
+    /*ul*/
+    #pro header #nav-drawer #nav-content ul {
+        font-size: 25px;
+    }
+    #pro header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    /*overflow: hidden指定*/
+    #pro header .img_box {
+        width: 100%;
+        height: 58vh;/*1280px本来の高さ*/
+        position: relative;
+        overflow: hidden;
+    }
+    #pro header img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: auto; /* サイズ指定をリセット！*/
+        max-width: initial; /* サイズ指定をリセット！*/
+        height: 100%;
+    }
+
+    #pro header h1 {
+        z-index: 1;
+        font-size: 80px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 2.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #FFF;
+        font-family: "Times New Roman", Times, serif;
+        -ms-writing-mode: tb-rl;/*縦指定*/
+        writing-mode: vertical-rl;/*縦指定*/
+    }
+
+    #pro header h2 {
+        position: absolute;
+        bottom: -5%;
+        font-size: 160px;
+        font-weight: bold;
+        color: #fff;
+        left: 55%;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);
+        font-family: "Times New Roman", Times, serif;
+    }    
+    
+    /*contents*/
+    .contents_box {
+        width: 45%;
+        margin: 12% 27.5%;
+    }
+    .contents_box h3 {
+        color: #F00;
+        font-size: 16px;
+        line-height: 1.3;
+        padding-bottom: 3.5vw;
+        text-align: center;
+    }
+    .contents_box h3:before{
+        font-size: 38px;
+    }
+    .contents_box p {
+        font-size: 18px;
+        line-height: 3;
+    }
+
+    /*mainArea*/
+    /*pタグ縦書き指定*/
+    .centerWrap .p_out,.bnrWrap .p_a {
+        font-size: 26px;
+    }
+    .h3p_wrap {
+        width: 60%;
+    }
+    
+    /*bottomArea*/
+    .wrap_Bottom {
+        width: 80%;
+        height: auto;
+        margin: 10% 10%;
+    }
+    .wrap_a h4 {
+        font-size: 30px;
+        color: #f00;
+        margin-bottom: 35px;
+    }
+    .wrap_a p {
+        color: #f00;
+        font-size: 16px;
+        line-height: 3;
+    }    
+    
+}
+
+@media screen and (max-width: 960px) {
+    /*header*/
+
+
+    #pro header #nav-drawer #nav-content ul {
+        font-size: 19px;
+    }  
+
+    #pro header h2 {
+        position: absolute;
+        bottom: -3.8%;
+        font-size: 129px;
+        font-weight: bold;
+        color: #fff;
+        left: 55%;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);
+        font-family: "Times New Roman", Times, serif;
+    }    
+    /*contents*/
+    .contents_box {
+        width: 60%;
+        margin: 12% 20%;
+    }
+    .contents_box h3 {
+        color: #F00;
+        font-size: 12px;
+        line-height: 1.3;
+        padding-bottom: 3.5vw;
+        text-align: center;
+    }
+    .contents_box h3:before{
+        content: "Granchocolate";
+        color: #F00;
+        font-size: 28px;
+        display: block;/*改行指定*/
+    }
+    .contents_box p {
+        color: #F00;
+        font-size: 16px;
+        line-height: 3;
+    }
+
+    
+    /*mainArea*/
+    /*pタグ縦書き指定*/
+    .centerWrap .p_out,.bnrWrap .p_a {
+        font-size: 28px;
+        left: 6%;
+    }
+    
+    p.read {
+        font-size: 16px;
+    }
+    /*hover内のdiv*/
+    .h3p_wrap {
+        width: 75%;
+    }
+    h3.more {
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    .h3p_wrap p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    
+    
+    
+    /*bottomArea*/
+    .wrap_Bottom {
+        width: 70%;
+        height: auto;
+        margin: 13% 15%;
+        display: block;
+    }
+    .wrap_a {
+        width: 80%;
+        margin: 0 10% 13% 10%;
+        position: static;
+    }    
+    .wrap_a .a_box {
+        position: static;
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+    }
+
+    .wrap_a h4 {
+        font-size: 28px;
+        color: #f00;
+        margin-bottom: 30px;
+    }
+    .wrap_a p {
+        color: #f00;
+        font-size: 16px;
+        line-height: 3;
+    }
+    .wrap_b {
+        width: 100%;
+    }    
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #pro header {
+    position: relative;
+    }
+    #pro header h1 {
+	font-size: 70px;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 3%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+	font-family: "Times New Roman", Times, serif;
+	-webkit-writing-mode: tb-rl;/*縦指定*/
+    -moz-writing-mode: tb-rl;/*縦指定*/
+    writing-mode: tb-rl;/*縦指定*/
+	-webkit-writing-mode: vertical-rl;/*縦指定*/
+    -moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+    }
+    #pro header h2 {
+        position: absolute;
+        font-size: 100px;
+        font-weight: bold;
+        color: #fff;
+        bottom: -3%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-family: "Times New Roman", Times, serif;
+    }
+
+
+    /*ハンバーガーアイコンが拡大されない為のサイズ指定*/
+    #pro header #nav-drawer img {
+        width: 30px;
+        height: 10px;
+    }
+    /*ハンバーガーアイコン位置指定*/
+    #pro header #nav-drawer {
+        position: absolute;
+        top: 30px;
+        right: 48px;
+    }    
+    
+    
+    /*contents*/
+    #contents {
+        width: 100%;
+        height: auto;
+    }
+    .contents_box {
+        width: 70%;
+        margin: 15% 15%;
+    }
+    .contents_box h3 {
+        color: #F00;
+        font-size: 11px;
+        line-height: 1.3;
+        padding-bottom: 4.5vw;
+        text-align: center;
+    }
+    .contents_box h3:before{
+        content: "Granchocolate";
+        color: #F00;
+        font-size: 26px;
+        display: block;/*改行指定*/
+    }
+    .contents_box p {
+        color: #F00;
+        font-size: 16px;
+        line-height: 2.5;
+    }
+    
+    /*mainArea*/
+    #pro #mainArea {
+        width: 100%;
+    }
+    /*#mainSection*/
+    #pro #mainSection {
+        width: 100%;
+        margin: 10% auto;
+    }
+    .centerWrap,.bnrWrap {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 13%;
+        background: #000;
+        color: #FFF;
+        position: relative;
+    }
+    /*pタグ縦書き指定*/
+    .centerWrap .p_out,.bnrWrap .p_a {
+        font-size: 24px;
+        left: 4.5%;
+    }
+    p.read {
+        font-size: 12px;
+    }
+    .h3p_wrap {
+        width: 95%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    /*bottomArea*/
+    #pro .blockBottom {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .blockBottom .red_box {
+        height: 43vw;
+    }
+
+    .wrap_Bottom {
+        width: 70%;
+        height: auto;
+        margin: 15% 15%;
+        display: block;
+    }
+    .wrap_a {
+        width: 90%;
+        margin: 0 5% 12% 5%;
+        position: static;
+    }    
+    .wrap_a .a_box {
+        position: static;
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+    }
+
+    .wrap_a h4 {
+        font-size: 22px;
+        color: #f00;
+        margin-bottom: 25px;
+    }
+    .wrap_a p {
+        color: #f00;
+        font-size: 16px;
+        line-height: 2.5;
+    }
+    .wrap_b {
+        width: 100%;
+    }    
+  
+
+}
+
+
+
+
+
+/*480px*/
+@media screen and (max-width: 480px) {
+    /*header*/
+    #pro header h1 {
+	font-size: 65px;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 3%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+	font-family: "Times New Roman", Times, serif;
+	-webkit-writing-mode: tb-rl;/*縦指定*/
+    -moz-writing-mode: tb-rl;/*縦指定*/
+    writing-mode: tb-rl;/*縦指定*/
+	-webkit-writing-mode: vertical-rl;/*縦指定*/
+    -moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+    }
+    #pro header h2 {
+        position: absolute;
+        font-size: 92px;
+        font-weight: bold;
+        color: #fff;
+        bottom: -2.8%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    /*contents*/
+    #contents {
+        width: 100%;
+        height: auto;
+    }
+    .contents_box {
+        width: 80%;
+        margin: 19% 10%;
+    }
+    .contents_box h3 {
+        color: #F00;
+        font-size: 10px;
+        line-height: 1.3;
+        padding-bottom: 4.5vw;
+        text-align: center;
+    }
+    .contents_box h3:before{
+        content: "Granchocolate";
+        color: #F00;
+        font-size: 24px;
+        display: block;/*改行指定*/
+    }
+    .contents_box p {
+        color: #F00;
+        font-size: 14px;
+        line-height: 2.5;
+    }
+    
+    
+    /*mainArea*/
+
+    .centerWrap,.bnrWrap {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 15% 12%;
+    }
+
+    /*pタグ横書き指定*/
+    .centerWrap .p_out,.bnrWrap .p_a {
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-writing-mode: lr-tb;
+        -moz-writing-mode: lr-tb;
+        writing-mode: lr-tb;
+    }
+
+    .h3p_wrap {
+        width: 97%;
+    }
+    h3.more {
+        padding-bottom: 5px;
+    }
+    .h3p_wrap p {
+        line-height: 1.4;
+    }
+    
+    /*bottomArea*/
+    #pro .blockBottom {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    .blockBottom .red_box {
+        height: 43vw;
+    }
+
+    .wrap_Bottom {
+        width: 80%;
+        height: auto;
+        margin: 15% 10%;
+        display: block;
+    }
+    .wrap_a {
+        width: 100%;
+        margin: 0 0% 10% 0%;
+        position: static;
+    }    
+    .wrap_a .a_box {
+        position: static;
+        -webkit-transform: none;
+        -moz-transform: none;
+        transform: none;
+    }
+
+    .wrap_a h4 {
+        font-size: 18px;
+        color: #f00;
+        margin-bottom: 25px;
+    }
+    .wrap_a p {
+        color: #f00;
+        font-size: 14px;
+        line-height: 2.2;
+    }
+    .wrap_b {
+        width: 100%;
+    }  
+}

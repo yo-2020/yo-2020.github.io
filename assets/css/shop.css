@@ -1,0 +1,861 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header*/
+
+#shop header {
+    width: 80%;
+	position: relative;
+    padding: 0% 0% 8% 20%;
+    margin: 0;
+}
+#shop .head_box {
+    width: 100%;
+}
+/*ul*/
+#shop #nav-drawer #nav-content ul {
+    padding: 3.5% 2% 3.5% 0%;
+	color: #F00;
+    font-size: 2vw;
+	font-family: "Times New Roman", Times, serif;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#shop header #nav-drawer #nav-content ul li {
+	padding-right: 1em;
+}
+
+#shop header #nav-drawer #nav-content ul li a {
+	color: #F00;
+}
+#shop header #nav-drawer #nav-content ul li a:hover {
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+
+
+#shop header h1 {
+	font-size: 5.5vw;
+	position: absolute;
+	font-weight: bold;
+	top: 48%;
+	left: 7%;
+    -webkit-transform: translateY(-49%);    
+    -moz-transform: translateY(-49%);    
+    transform: translateY(-48%);    
+	font-family: "Times New Roman", Times, serif;
+    -webkit-writing-mode: tb-rl;/*縦指定*/
+	-moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+}
+#shop header h1 a {
+    color: #000;
+}
+
+#shop header h2 {
+	position: absolute;
+	bottom: 9%;
+    left: 55%;
+	font-size: 12vw;
+	font-weight: bold;
+	color: #000;
+	-webkit-transform: translateX(-55%);
+    -moz-transform: translateX(-55%);
+    transform: translateX(-55%);
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+/*center*/
+#shop #center {
+    width: 100%;
+}
+#shop #mainArea,#shop #mainArea_Another {
+    width: 100%;
+    padding: 0% 8% 8% 8%;/*headerとmainAreaの隙間指定*/
+    box-sizing: border-box;
+}
+
+/*jQuery expandedを親要素にした時にdataが出現*/
+/*expandedにposition: relative;を効かせるための指定*/
+#shop .contentWrap,.expanded {
+    position: relative;    
+}
+/*通常時はcontentWrapを親要素にしたdataを隠す指定*/
+#shop .contentWrap .deta {
+    display: none;
+}
+/*expandedを親要素にした時にdataを出現させる指定*/
+#shop .expanded .deta {
+    display: block;
+}
+/*expandedを親要素にした時のみcssがdataに適用させる為の指定*/
+#shop .expanded .deta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    color: #fff;
+    display: flex;/*dlを縦横中央寄せ*/
+    align-items: center;
+    justify-content: space-around;
+}
+/*dataに上記の指定をしてる為子要素にはexpandedを付けなくていい*/
+#shop .deta a {
+    color: #fff;
+    
+}
+#shop .deta dl {
+    line-height: 1.8;
+    display: flex;/*dt_one twoを横並び*/
+}
+#shop .dt_one {
+    width: 50%;
+}
+#shop .dt_one {
+    width: 50%;
+}
+#shop .deta dt.border {
+    position: relative;
+    padding: 2em 0 0 0;
+}
+/*dd dtの間の境界線*/
+#shop .deta dt.border:before {
+    content: '';
+    position: absolute;
+    left: 0.5%;
+    bottom: 75%;/*線の上下位置*/
+    display: inline-block;
+    width: 10px;/*線の長さ*/
+    height: 1px;/*線の太さ*/
+    background-color: #fff;/*線の色*/
+}
+
+#shop .deta dd {
+    padding: 0 0 0 1em;
+}
+#shop .deta dd a {
+    color: #fff;
+}
+
+
+
+#shop .headline_one {
+    color: #fff;
+    width: 215px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .5s;
+    z-index: 20;
+}
+#shop .headline_one:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+#shop .headline_one h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 6px 0;
+}
+#shop .headline_one p {
+    font-size: 16px;
+    font-weight: 400;
+}
+#shop .headline_one p span,.headline_two p span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#shop .headline_two {
+    color: #fff;
+    width: 179px;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    /*background-color: #000;*/
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .5s;
+    z-index: 20;  
+}
+#shop .headline_two:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    font-weight: normal; 
+}
+#shop .headline_two h3 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 0 6px 0;
+}
+
+#shop .headline_two p {
+    font-size: 16px;
+}
+
+#shop p.stroke {
+	font-size: 9vw;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	right: 2%;
+    -webkit-transform: translateY(-50%);    
+    -moz-transform: translateY(-50%);    
+    transform: translateY(-50%);    
+	font-family: "Times New Roman", Times, serif;
+    -webkit-writing-mode: tb-rl;
+    -moz-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    /*-webkit-text-stroke: 2px rgba(255,255,255,1);
+    -moz-text-stroke: 2px rgba(255,255,255,1);
+    text-stroke: 2px rgba(255,255,255,1);*/
+    color: rgba(255,255,255,0.3);    
+}
+
+
+/*max-width 1280px*/
+@media screen and (max-width: 1280px) {
+
+    #shop #nav-drawer #nav-content ul {
+        font-size: 25px;
+        padding: 3.8% 2% 3.8% 0%;
+    }
+    #shop header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 6.5%;
+        -webkit-transform: translateY(-50%);    
+        -moz-transform: translateY(-50%);    
+        transform: translateY(-50%);
+        font-size: 74px;
+    }
+    #shop header h2 {
+        font-size: 13.5vw;
+    	position: absolute;
+        bottom: 6%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translate(-55%,-6%);
+        -moz-transform: translate(-55%,-6%);
+        transform: translate(-55%,-6%);  
+    }
+    #shop header {
+        width: 80%;
+        position: relative;
+        padding: 0% 0% 8% 20%;
+        margin: 0;
+    }
+    #shop header .head_box {
+        width: 100%;
+        height: 48vh;/*1280px本来の高さ*/
+        position: relative;
+        overflow: hidden;
+    }
+    #shop header .head_box img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 75%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-75%, -50%);
+        width: auto; /* サイズ指定をリセット！*/
+        max-width: initial; /* サイズ指定をリセット！*/
+        height: 100%;    
+    }
+    #shop #mainArea,#shop #mainArea_Another {
+        width: 100%;
+        padding: 0% 8% 8% 8%;
+        box-sizing: border-box;        
+    }
+    
+}
+
+/*max-width 960px*/
+@media screen and (max-width: 960px) {
+
+    #shop header #nav-drawer #nav-content ul {
+        font-size: 19px;
+        padding: 4% 2% 4% 0%;
+
+    }
+    #shop header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 58%;/*あえてtransform外している*/
+        left: 3%;       
+        font-size: 70px;
+    }
+    #shop header h2 {
+        font-size: 135px;
+    	position: absolute;
+        bottom: -6%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    #shop header {
+        width: 100%;
+        position: relative;
+        padding: 0%;
+        /*background-color: blue*/
+    }
+    #shop #mainArea {
+        width: 100%;
+        padding: 10% 5% 8% 5%;
+        box-sizing: border-box;
+    }
+    #shop #mainArea_Another {
+        width: 100%;
+        padding: 0% 5% 8% 5%;
+        box-sizing: border-box;        
+    }
+    #shop .deta dl {
+        padding-top: 8%;
+        width: 60%;
+        line-height: 3vw;
+        display: flex;/*dt_one twoを横並び*/
+    }
+    #shop .dt_one {
+        width: 50%;
+    }
+    #shop .dt_two {
+        width: 50%;
+    }
+    #shop .deta dt.border {
+        position: relative;
+        padding: 1.5em 0 0 0;
+    }
+}
+
+/*max-width 600px*/
+@media screen and (max-width: 600px) {
+    #shop header #nav-drawer #nav-content ul {
+        position: absolute;
+        padding: 0%;
+        z-index: 999;
+    }
+    #shop header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);  
+        font-size: 62px;
+    }
+
+    
+    #shop header h2 {
+        font-size: 120px;
+    	position: absolute;
+        bottom: -7%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    #shop header {
+        width: 100%;
+        position: relative;
+        display: block;
+        padding: 0%;
+        margin: 0;
+    }
+    #shop #mainArea {
+        width: 100%;
+        padding: 12% 0% 10% 0%;
+        box-sizing: border-box;
+    }
+    #shop #mainArea_Another {
+        width: 100%;
+        padding: 0% 0% 10% 0%;
+        box-sizing: border-box;        
+    }
+    
+    
+    #shop .headline_one {
+        color: #fff;
+        width: 157px;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        padding: 12px;
+        outline: none;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .5s;
+    }
+    #shop .headline_two {
+        color: #fff;
+        width: 127px;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        padding: 12px;
+        outline: none;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .5s;     
+    }
+    #shop .headline_one h3,#shop .headline_two h3 {
+        font-size: 11px;
+        font-weight: 400;
+        padding: 0 0 5px 0;
+    }
+    #shop .headline_one p,#shop .headline_two p {
+        font-size: 11px;
+        font-weight: 400;
+    }
+    #shop .headline_one p span,#shop .headline_two p span {
+        font-size: 14px;
+    }    
+   #shop .deta dl {
+       padding-top: 10%;
+        font-size: 14px;
+        width: 70%;
+        line-height: 4.5vw;
+        display: flex;/*dt_one twoを横並び*/
+    }
+    #shop .dt_one {
+        width: 40%;
+    }
+    #shop .dt_two {
+        width: 60%;
+    }         
+
+    #shop .deta dt.border {
+        position: relative;
+        padding: 0.7em 0 0 0;
+    }
+    #shop .deta dt.border:before {
+        content: '';
+        position: absolute;
+        left: 0.5%;
+        bottom: 84%;/*線の上下位置*/
+        display: inline-block;
+        width: 10px;/*線の長さ*/
+        height: 1px;/*線の太さ*/
+        background-color: #fff;/*線の色*/
+    }
+
+}
+
+
+
+
+/*max-width 480px*/
+@media screen and (max-width: 480px) {
+    #shop header h1 {
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);  
+        font-size: 60px;
+    }
+
+    #shop header h2 {
+        font-size: 95px;
+    	position: absolute;
+        bottom: -6%;
+        left: 55%;
+        font-weight: bold;
+        color: #000;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);  
+    }
+    #shop #mainArea {
+        width: 100%;
+        padding: 12% 0% 10% 0%;
+        box-sizing: border-box;    
+    }
+    #shop #mainArea_Another {
+        width: 100%;
+        padding: 0% 0% 10% 0%;
+        box-sizing: border-box;        
+    }
+   #shop .deta dl {
+       padding-top: 17%;
+        font-size: 14px;
+        width: 85%;
+        line-height: 4.8vw;
+        display: flex;/*dt_one twoを横並び*/
+    }
+    #shop .dt_one {
+        width: 40%;
+    }
+    #shop .dt_two {
+        width: 60%;
+    }         
+    /*境界線消す指定*/
+    #shop .deta dt.border {
+        position: static;
+    }
+    /*境界線消す指定*/
+    #shop .deta dt.border:before {
+        content: '';
+        position: static;
+        left: 0.5%;
+        bottom: 84%;/*線の上下位置*/
+        display: inline-block;
+        width: 0px;/*線の長さ*/
+        height: 0px;/*線の太さ*/
+        background-color: #fff;/*線の色*/
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*common読み込み削除→代わりに直接記述*/
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+/*画像縮める設定*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*横スクロール出さない*/
+html {
+	overflow-y : scroll;
+	height: auto;
+}
+
+
+a {
+	text-decoration:none;
+}
+a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+/*inner設定*/
+#inner {
+	width: 100%;
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+
+/*headerフルスクリーン指定*/
+/*テキストを画像の上に配置*/
+
+header {
+	position: relative;
+	display: block;
+}
+
+
+header h1 a {
+	color: #FFF;
+}
+header h1 a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+header #nav-drawer #nav-content ul {
+
+	font-family: "Times New Roman", Times, serif;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header #nav-drawer #nav-content ul li {
+	padding-right: 1em;
+	color: #F00;
+}
+header #nav-drawer #nav-content ul li a {
+	color: #F00;
+}
+header #nav-drawer #nav-content ul li a:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+
+
+
+
+/*ここからfooter*/
+footer {
+	background: #000;
+    width: 100%;
+    height: auto;
+}
+.foot {
+    width: 90%;
+    margin: 0 5%;
+    padding: 3em 0;
+}
+.foot ul {
+	display: flex;
+    justify-content: center;
+	font-size: 110%;
+    font-family: "Times New Roman", Times, serif;
+}
+ul li:not(:last-child) {
+    padding-right: 1em;
+}
+footer a {
+	color: #f00;
+}
+.foot p {
+    color: #f00;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 90%;
+    padding-top: 3.5em;
+}
+
+hr {
+    display:block;
+    width: 90%;
+    height: 1px;
+    background-color: #f00;
+    border: none;
+}
+.footbox {
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 6em;
+    padding-bottom: 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.footbox p {
+    font-size: 90%;
+    color: #f00;
+}
+p.p_second {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*601px以上でハンバーガーメニュー消す*/
+header #nav-drawer #nav-open {
+	display:none;
+}
+header #nav-drawer .nav-unshown {
+	display:none;
+}
+
+
+
+/*レスポンシブ設定max-width: 600px*/
+@media screen and (max-width: 600px) { 
+    .foot ul {
+        display: flex;
+        flex-wrap:wrap;
+        line-height: 1.5;
+    }
+
+    .foot p {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.3;
+        padding-top: 2.5em;
+    }
+
+    .footbox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 3.5em;
+    }
+    p.p_second {
+        padding-top: 2em;
+    }
+
+
+    /*ここからハンバーガーメニュー*/
+    #shop header #nav-drawer #nav-open {
+            display:block;
+        }
+    /*アイコンが拡大されない為のサイズ指定*/
+    #shop header #nav-drawer img {
+        width: 30px;
+        height: 10px;
+    }
+    #shop header #nav-drawer {
+        position: absolute;
+        top: 27px;
+        right: 33px;
+        color: #FFF;
+        z-index: 999;
+    }
+    /*チェックボックス等は非表示に*/
+    #shop header #nav-drawer .nav-unshown {
+        display:none;
+    }
+
+    /*アイコンのスペース*/
+    #shop header #nav-drawer #nav-open {
+        display: inline-block;
+    }
+
+    /*ハンバーガーアイコンをCSSだけで表現*/
+    #shop header #nav-drawer #nav-content ul li a {
+        color: #fff;
+    }
+    #shop header #nav-drawer #nav-open span, #nav-open span:before, #nav-open span:after {
+        position: absolute;
+        /*height: 3px;*//*線の太さ*/
+        /*width: 25px;*//*長さ*/
+        background: #F00;
+        display: block;
+        content: '';
+        cursor: pointer;
+    }
+    #shop header #nav-drawer #nav-open span:before {
+        bottom: -8px;
+    }
+    #shop header #nav-drawer #nav-open span:after {
+        bottom: -16px;
+    }
+
+    /*閉じる用の薄黒カバー*/
+    #shop header #nav-drawer #nav-close {
+        display: none;/*はじめは隠しておく*/
+        position: fixed;
+        z-index: 999;
+        top: 0;/*全体に広がるように*/
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }
+    /*中身*/
+    #shop header #nav-drawer #nav-content {
+        overflow: auto;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 999;/*最前面に*/
+        width: 200px;/*右側に隙間を作る（閉じるカバーを表示）*/
+        height: 455px;
+        color: #fff;
+        text-align: justify-all;
+        background: #F00;/*背景色*/
+        transition: .3s ease-in-out;/*滑らかに表示*/
+        -webkit-transform: translateX(-105%);
+        -moz-transform: translateX(-105%);
+        transform: translateX(-105%);/*左に隠しておく*/
+    }
+    /*チェックが入ったらもろもろ表示*/
+    #shop header #nav-drawer #nav-input:checked ~ #nav-close {
+        display: block;/*カバーを表示*/
+        opacity: .5;
+    }
+
+    #shop header #nav-drawer #nav-input:checked ~ #nav-content {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%);/*中身を表示（右へスライド）*/
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+
+
+    #shop header #nav-drawer #nav-content ul {
+        display: block;
+        width: 30%;
+        position: absolute;
+        top: 16%;
+        left: 20%;
+        -webkit-transform: translateY(-16%);
+        -moz-transform: translateY(-16%);
+        transform: translateY(-16%);
+        -webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+    #shop header #nav-drawer #nav-content ul li {
+        font-size: 19px;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+
+}
+

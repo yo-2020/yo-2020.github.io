@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* CSS Document */
+
+#news body {
+    overflow-x: hidden;
+}
+
+#news #inner {
+    background-color: #f00;
+}
+
+/*header*/
+#news header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#news header h1 {
+	font-size: 6vw;
+	position: absolute;
+	font-weight: bold;
+	top: 50%;
+	left: 2.5%;
+    -webkit-transform: translateY(-50%);    
+    -moz-transform: translateY(-50%);    
+    transform: translateY(-50%);
+	font-family: "Times New Roman", Times, serif;
+	-webkit-writing-mode: tb-rl;/*縦指定*/
+	-moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+}
+#news header h1 a {
+    color: #fff;
+}
+
+#news #nav-drawer #nav-content ul {
+	font-size: 2vw;
+}
+
+#news header h2 {
+	position: absolute;
+	bottom: -8%;
+    left: 55%;
+	font-size: 12vw;
+	font-weight: bold;
+	color: #fff;
+	-webkit-transform: translateX(-55%);
+    -moz-transform: translateX(-55%);
+    transform: translateX(-55%);
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*jQeryアコーディン指定*/
+#news .list .Accordion {
+    display: none;
+}
+#news .expanded .Accordion {
+    display: block;
+}
+
+/*wrap_a wrap_b 40% 区分け*/
+#news #bottom {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    box-sizing: border-box;
+}
+#news .wrap_a {
+    width: 60%;
+    padding: 5% 0% 5% 15%;
+    box-sizing: border-box;
+    margin: 0;
+}
+#news .wrap_b {
+    width: 40%;
+    padding: 5% 0% 5% 5%;
+    box-sizing: border-box;
+}
+#news .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%; 
+}
+#news .info img {
+    max-width: 350px;
+}
+#news .list,.expanded {
+    width: 70%;
+    color: #fff;
+    line-height: 1.7;
+    margin-left: 5%;
+}
+#news .news_p {
+    font-size: 20px;
+    line-height: 2.1;
+    position: relative;  
+}
+
+#news .news_p:before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 2.15em;/*線の上下位置*/
+    display: inline-block;
+    width: 20px;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    background-color: #fff;/*線の色*/
+}
+#news .news_p span {
+    font-size: 14px;
+}
+#news .Accordion {
+    margin-top: 9px;/*アンダーラインとの差を均等にするため*/ 
+}
+#news .bottomnone {
+    margin-bottom: 0%;
+}
+
+
+
+/*wrap_b*/
+#news .wrap_in img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto; /* サイズ指定をリセット！ */
+    max-width: initial; /* サイズ指定をリセット！ */
+    height: 100%;
+}
+#news .wrap_in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#news .wrap_in p {
+    -webkit-text-stroke: 3px rgba(255,0,0,1);
+    -moz-text-stroke: 3px rgba(255,0,0,1);
+    text-stroke: 3px (255,0,0,1);
+    color: rgba(255,255,255,0);
+    font-size: 320px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);*/
+	font-family: "Times New Roman", Times, serif;
+	-webkit-writing-mode: tb-rl;/*縦指定*/
+	-moz-writing-mode: vertical-rl;/*縦指定*/
+    writing-mode: vertical-rl;/*縦指定*/
+	font-family: "Times New Roman", Times, serif;   
+}
+
+
+
+
+
+
+/*レスポンシブ設定*/
+@media screen and (max-width: 1280px) { 
+
+    /*headerエリア*/
+    /*ul*/
+    #news header #nav-drawer #nav-content ul {
+        font-size: 25px;
+    }
+    /*overflow: hidden指定*/
+    #news header .photo_box {
+        width: 100%;
+        height: 58vh;/*1280px本来の高さ*/
+        position: relative;
+        overflow: hidden;
+    }
+    #news header img {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 25%;
+        -webkit-transform: translate(-25%, -50%);
+        -moz-transform: translate(-25%, -50%);
+        transform: translate(-25%, -50%);
+        width: auto; /* サイズ指定をリセット！*/
+        max-width: initial; /* サイズ指定をリセット！*/
+        height: 100%;
+    }
+ 
+
+    #news header h1 {
+        z-index: 1;
+        font-size: 80px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 2.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #FFF;
+        font-family: "Times New Roman", Times, serif;
+        -ms-writing-mode: tb-rl;/*縦指定*/
+        writing-mode: vertical-rl;/*縦指定*/
+    }
+
+    #news header h2 {
+        position: absolute;
+        bottom: -9%;
+        font-size: 170px;
+        font-weight: bold;
+        color: #fff;
+        left: 55%;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    /*bottom*/
+    #news #bottom {
+        width: 100%;
+        display: flex;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    #news .wrap_a {
+        width: 70%;
+        padding: 5% 0% 5% 10%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #news .wrap_b {
+        width: 30%;
+        padding: 5% 0% 5% 5%;
+        box-sizing: border-box;
+    }
+    #news .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #news .list,.expanded  {
+        width: 70%;
+        color: #fff;
+        line-height: 1.7;
+        margin-left: 5%;
+    }
+
+    #news .wrap_in p {
+        font-size: 305px;
+    }
+    #news .bottomnone {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+
+    /*header*/
+    #news header #nav-drawer #nav-content ul {
+        font-size: 19px;
+    }
+    
+    #news header h1 {
+        z-index: 1;
+        font-size: 80px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 2.5%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #FFF;
+        font-family: "Times New Roman", Times, serif;
+        -ms-writing-mode: tb-rl;/*縦指定*/
+        writing-mode: vertical-rl;/*縦指定*/
+    }
+
+    #news header h2 {
+        position: absolute;
+        bottom: -7.5%;
+        font-size: 155px;
+        font-weight: bold;
+        color: #fff;
+        left: 55%;
+        -webkit-transform: translateX(-55%);
+        -moz-transform: translateX(-55%);
+        transform: translateX(-55%);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    
+    /*bottom*/
+    #news #bottom {
+        width: 100%;
+        display: block;
+        padding: 15% 10% 15% 10%;
+        box-sizing: border-box;
+    }
+    #news .wrap_a {
+        width: 100%;
+        padding: 0%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    #news .wrap_b {
+        width: 100%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #news .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 9%; 
+    }
+    #news .list,.expanded {
+        width: 70%;
+        color: #fff;
+        line-height: 1.7;
+        margin-left: 5%;
+    }
+    #news .news_p {
+        font-size: 16px;
+        line-height: 2.2;
+        position: relative;  
+    }
+    #news .news_p:before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        top: 2.2em;/*線の上下位置*/
+        display: inline-block;
+        width: 16px;/*線の長さ*/
+        height: 2px;/*線の太さ*/
+        background-color: #fff;/*線の色*/
+    }
+    #news .news_p span {
+        font-size: 12px;
+    }    
+    
+    #news .bottomnone {
+        margin-bottom: 15%;
+    }
+    /*wrap_b*/
+    #news .wrap_in img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: auto; /* サイズ指定をリセット！ */
+        /*max-width: initial; /* サイズ指定をリセット！ */
+        width: 100%;
+    }
+    #news .wrap_in {
+        position: relative;
+        width: 100%;
+        height: 30vw;
+        overflow: hidden;
+    }
+    #news .wrap_in p {
+        -webkit-text-stroke: 2px rgba(255,0,0,1);
+        -moz-text-stroke: 2px rgba(255,0,0,1);
+        text-stroke: 2px (255,0,0,1);
+        color: rgba(255,255,255,0);
+        font-size: 22vw;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);*/
+        font-family: "Times New Roman", Times, serif;
+        -webkit-writing-mode: lr-tb;/*横書き指定*/
+        -moz-writing-mode: lr-tb;/*横書き指定*/
+        writing-mode: lr-tb;/*横書き指定*/
+        font-family: "Times New Roman", Times, serif;   
+    }
+}
+
+
+/*max-width600px*/
+@media screen and (max-width: 600px) {
+    #news header {
+        position: relative;
+    }
+    #news header h1 {
+        font-size: 75px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3%;
+        -webkit-transform: translateY(-11%);
+        -moz-transform: translateY(-11%);
+        transform: translateY(-50%);
+        font-family: "Times New Roman", Times, serif;
+        -webkit-writing-mode: tb-rl;/*縦指定*/
+        -moz-writing-mode: tb-rl;/*縦指定*/
+        writing-mode: tb-rl;/*縦指定*/
+        -webkit-writing-mode: vertical-rl;/*縦指定*/
+        -moz-writing-mode: vertical-rl;/*縦指定*/
+        writing-mode: vertical-rl;/*縦指定*/
+    }
+    #news header h2 {
+        position: absolute;
+        font-size: 129px;
+        font-weight: bold;
+        color: #fff;
+        bottom: -6%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    
+    
+    
+    /*メニューアイコンが拡大されない為のサイズ指定*/
+    #news header #nav-drawer img {
+        width: 30px;
+        height: 10px;
+    }
+    /*ハンバーガーアイン位置指定*/
+    #news header #nav-drawer {
+        position: absolute;
+        top: 30px;
+        right: 56px;
+    }    
+    
+
+    
+    
+    
+    /*bottom*/
+    #news #bottom {
+        width: 100%;
+        display: block;
+        padding: 20% 10% 20% 10%;
+        box-sizing: border-box;
+    }
+    #news .wrap_a {
+        width: 100%;
+        padding: 0%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    #news .wrap_b {
+        width: 100%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #news .news_p {
+        font-size: 20px;
+        line-height: 2.1;
+        position: relative;  
+    }
+    #news .news_p:before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        top: 2.15em;/*線の上下位置*/
+        display: inline-block;
+        width: 20px;/*線の長さ*/
+        height: 2px;/*線の太さ*/
+        background-color: #fff;/*線の色*/
+    }
+    #news .news_p span {
+        font-size: 14px;
+    }    
+    #news .info {
+        display: block;
+        margin-bottom: 15%;
+    }
+    
+    #news .info .img_box {
+        width: 80%;
+        margin: 0% auto;
+        text-align: center;
+    }
+    #news .list,.expanded {
+        width: 80%;
+        color: #fff;
+        line-height: 1.7;
+        margin: 10% 7% 0% 13%;
+    }
+
+    #news .bottomnone {
+        margin-bottom: 20%;
+    }
+    
+    /*wrap_b*/
+    #news .wrap_in img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: auto; /* サイズ指定をリセット！ */
+        /*max-width: initial; /* サイズ指定をリセット！ */
+        width: 100%;
+    }
+    #news .wrap_in {
+        position: relative;
+        width: 100%;
+        height: 40vw;
+        overflow: hidden;
+    }
+    #news .wrap_in p {
+        -webkit-text-stroke: 2px rgba(255,0,0,1);
+        -moz-text-stroke: 2px rgba(255,0,0,1);
+        text-stroke: 2px (255,0,0,1);
+        color: rgba(255,255,255,0);
+        font-size: 20vw;
+        font-weight: bold;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);*/
+        font-family: "Times New Roman", Times, serif;
+        -webkit-writing-mode: lr-tb;/*横書き指定*/
+        -moz-writing-mode: lr-tb;/*横書き指定*/
+        writing-mode: lr-tb;/*横書き指定*/
+        font-family: "Times New Roman", Times, serif;   
+    }
+}
+
+
+
+
+/*480px*/
+@media screen and (max-width: 480px) {
+    /*header*/
+    #news header h1 {
+        font-size: 67px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 3%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: "Times New Roman", Times, serif;
+        -webkit-writing-mode: tb-rl;/*縦指定*/
+        -moz-writing-mode: tb-rl;/*縦指定*/
+        writing-mode: tb-rl;/*縦指定*/
+        -webkit-writing-mode: vertical-rl;/*縦指定*/
+        -moz-writing-mode: vertical-rl;/*縦指定*/
+        writing-mode: vertical-rl;/*縦指定*/
+    }
+    #news header h2 {
+        position: absolute;
+        font-size: 104px;
+        font-weight: bold;
+        color: #fff;
+        bottom: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Times New Roman", Times, serif;
+    }
+    
+    #news .news_p {
+        font-size: 16px;
+        line-height: 2.2;
+        position: relative;  
+    }
+    #news .news_p:before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        top: 2.2em;/*線の上下位置*/
+        display: inline-block;
+        width: 16px;/*線の長さ*/
+        height: 2px;/*線の太さ*/
+        background-color: #fff;/*線の色*/
+    }
+    #news .news_p span {
+        font-size: 12px;
+    }    
+
+    #news .Accordion {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+
+}
+
